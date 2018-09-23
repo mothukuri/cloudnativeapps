@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>servicebroker-mongo</name>
-	<description>Mongo DB servicebroker</description>
+	<description>Service broker for mongo</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -25,6 +25,10 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-open-service-broker-webmvc</artifactId>
